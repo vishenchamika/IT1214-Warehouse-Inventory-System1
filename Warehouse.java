@@ -7,8 +7,7 @@ public class Warehouse {
 
         int choice;
 
-        do {
-            System.out.println("\n--- Warehouse Menu ---");
+        do {
             System.out.println("1. Add Item");
             System.out.println("2. Remove Item");
             System.out.println("3. Update Quantity");
