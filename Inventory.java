@@ -3,13 +3,13 @@ import java.util.ArrayList;
 public class Inventory {
     private ArrayList<Item> items = new ArrayList<>();
 
-    // Add item
+    
     public void addItem(Item item) {
         items.add(item);
         System.out.println("Item added successfully!");
     }
 
-    // Remove item
+    
     public void removeItem(String id) {
         Item found = null;
         for (Item item : items) {
@@ -26,7 +26,7 @@ public class Inventory {
         }
     }
 
-    // Update quantity
+    
     public void updateQuantity(String id, int newQty) {
         for (Item item : items) {
             if (item.getItemId().equals(id)) {
@@ -38,7 +38,7 @@ public class Inventory {
         System.out.println("Item not found!");
     }
 
-    // Search by ID or Name
+ 
     public void searchItem(String keyword) {
         boolean found = false;
         for (Item item : items) {
@@ -53,7 +53,7 @@ public class Inventory {
         }
     }
 
-    // Display all items
+    
     public void displayItems() {
         if (items.isEmpty()) {
             System.out.println("Inventory is empty!");
